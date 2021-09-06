@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: google
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: facebook
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: apple
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: amazon
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: netflix
