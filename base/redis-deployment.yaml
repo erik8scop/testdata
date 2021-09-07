@@ -47,7 +47,6 @@ spec:
     app: redis
     role: leader
     tier: backend
-  namespace: google
 ---
 apiVersion: apps/v1
 kind: Deployment
