@@ -43,12 +43,12 @@ spec:
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
-          claimName: mysql-pv-claim
+          claimName: apple-mysql-pv-claim
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mysql-pv-volume
+  name: apple-mysql-pv-volume
   labels:
     type: local
   namespace: apple
@@ -64,7 +64,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pv-claim
+  name: apple-mysql-pv-claim
   namespace: apple
 spec:
   storageClassName: manual

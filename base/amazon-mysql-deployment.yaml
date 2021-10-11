@@ -43,12 +43,12 @@ spec:
       volumes:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
-          claimName: mysql-pv-claim
+          claimName: amazon-mysql-pv-claim
 ---
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-  name: mysql-pv-volume
+  name: amazon-mysql-pv-volume
   labels:
     type: local
   namespace: amazon
@@ -64,7 +64,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mysql-pv-claim
+  name: amazon-mysql-pv-claim
   namespace: amazon
 spec:
   storageClassName: manual
