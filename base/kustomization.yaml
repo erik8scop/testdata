@@ -1,11 +1,11 @@
 resources:
   - namespaces.yaml
   - secrets.yaml
-  - ./amazon-mysql-deployment.yaml
-  - ./amazon-nginx-deployment.yaml
-  - ./apple-mysql-deployment.yaml
-  - ./apple-nginx-deployment.yaml
-  - ./facebook-redis-deployment.yaml
-  - ./google-redis-deployment.yaml
-  - ./netflix-nginx-deployment.yaml
-  - ./netflix-redis-deployment.yaml
+  - amazon-mysql-deployment.yaml
+  - amazon-nginx-deployment.yaml
+  - apple-mysql-deployment.yaml
+  - apple-nginx-deployment.yaml
+  - facebook-redis-deployment.yaml
+  - google-redis-deployment.yaml
+  - netflix-nginx-deployment.yaml
+  - netflix-redis-deployment.yaml
