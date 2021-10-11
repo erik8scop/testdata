@@ -3,7 +3,7 @@ kind: GitRepository
 metadata:
   name: testdata
 spec:
-  interval: 1m
+  interval: 30s
   url: https://github.com/erik8scop/testdata.git
   ref:
     branch: main
@@ -13,7 +13,7 @@ kind: Kustomization
 metadata:
   name: testdata
 spec:
-  interval: 1m
+  interval: 30s
   path: "./"
   prune: true
   timeout: 2m
