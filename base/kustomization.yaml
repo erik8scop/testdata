@@ -14,3 +14,7 @@ resources:
   - ali-deployment.yaml
   - tencent.yaml
   - dao-deployment.yaml
+  - myapp.yaml
+  - testapp.yaml
+  - jane.yaml
+
