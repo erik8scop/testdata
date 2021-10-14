@@ -13,3 +13,4 @@ resources:
   - gcp-deployment.yaml
   - ali-deployment.yaml
   - tencent.yaml
+  - dao-deployment.yaml
