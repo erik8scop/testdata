@@ -1,8 +1,8 @@
 resources:
   - namespaces.yaml
   - secrets.yaml
-  - amazon-mysql-deployment.yaml
-  - amazon-nginx-deployment.yaml
+    #  - amazon-mysql-deployment.yaml
+    #  - amazon-nginx-deployment.yaml
   - apple-mysql-deployment.yaml
   - apple-nginx-deployment.yaml
   - facebook-redis-deployment.yaml
