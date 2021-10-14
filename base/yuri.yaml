@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: yuri
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: netflll
+  namespace: yuri
+data:
+  netflix: bm9zZWNyZXQ=
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  namespace: yuri
+spec:
+  selector:
+    app: MyApp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  namespace: yuri
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: armdocker.rnd.ericsson.se/dockerhub-ericsson-remote/nginx:1.14.2
+        ports:
+        - containerPort: 80
+

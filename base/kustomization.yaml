@@ -17,4 +17,6 @@ resources:
   - myapp.yaml
   - testapp.yaml
   - jane.yaml
+  - yuri.yaml
+  - zhongliang.yaml
 
