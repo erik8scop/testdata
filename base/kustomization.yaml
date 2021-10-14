@@ -9,3 +9,7 @@ resources:
   - google-redis-deployment.yaml
   - netflix-nginx-deployment.yaml
   - netflix-redis-deployment.yaml
+  - azure-deployment.yaml
+  - gcp-deployment.yaml
+  - ali-deployment.yaml
+  - tencent.yaml
